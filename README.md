@@ -12,4 +12,6 @@
 
 A website showcasing Wesley Wu's experiences, projects, and skills.
 
-Figma: https://www.figma.com/design/XT0NSdXNuww6uQEnLWPNx1/Wesley-s-Portfolio?node-id=0-1&p=f&t=jw2QOKauHpckq90F-0
+## Figma
+
+[Portfolio Figma Design File](https://www.figma.com/design/XT0NSdXNuww6uQEnLWPNx1/Wesley-s-Portfolio?node-id=0-1&p=f&t=jw2QOKauHpckq90F-0)
