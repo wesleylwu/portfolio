@@ -1,3 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 @import "tailwindcss";
 
-@config '../../tailwind.config.ts';
+@theme {
+  --color-blue-primary: #030f18;
+  --color-blue-secondary: #061928;
+  --color-blue-accent: #060316;
+  --color-blue-neon: #00ffff;
+  --color-purple-neon: #d300ff;
+  --color-red-neon: #ff073a;
+  --color-green-neon: #32cd32;
+
+  --font-quicksand: "Quicksand";
+}
