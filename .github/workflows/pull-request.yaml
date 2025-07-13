@@ -1,7 +1,7 @@
 name: Wesley Wu's Portfolio
 on:
   pull_request:
-    branches: [main, dev]
+    branches: ['*']
   workflow_dispatch:
 
 jobs:
@@ -28,8 +28,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: acm-ucr/images@v2
-        with:
-          branch: ${{ github.head_ref }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
