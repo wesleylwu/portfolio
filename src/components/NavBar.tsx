@@ -14,7 +14,7 @@ const NavBar = () => {
   return (
     <>
       <div className="font-quicksand bg-blue-primary flex items-center justify-between p-10 text-2xl">
-        <p className="text-blue-neon">Wesley Wu</p>
+        <p className="text-blue-neon text-glow-blue neon-pulse">Wesley Wu</p>
         <div className="flex flex-row-reverse space-x-25 space-x-reverse text-white">
           {[...navBar].reverse().map(({ text, link }, index) => (
             <ScrollLink

@@ -6,10 +6,70 @@
   --color-blue-secondary: #061928;
   --color-blue-accent: #060316;
   --color-blue-dark: #008c8c;
+  --color-gray-primary: #4f575d;
   --color-blue-neon: #00ffff;
   --color-purple-neon: #d300ff;
   --color-red-neon: #ff073a;
   --color-green-neon: #32cd32;
-
   --font-quicksand: "Quicksand";
+}
+
+.text-glow-blue {
+  text-shadow:
+    0 0 5px #00ffff,
+    0 0 10px #00ffff,
+    0 0 20px #00ffff,
+    0 0 40px #00ffff;
+}
+
+.text-glow-purple {
+  text-shadow:
+    0 0 5px #d300ff,
+    0 0 10px #d300ff,
+    0 0 20px #d300ff,
+    0 0 40px #d300ff;
+}
+
+.text-glow-red {
+  text-shadow:
+    0 0 5px #ff073a,
+    0 0 10px #ff073a,
+    0 0 20px #ff073a,
+    0 0 40px #ff073a;
+}
+
+.text-glow-green {
+  text-shadow:
+    0 0 5px #32cd32,
+    0 0 10px #32cd32,
+    0 0 20px #32cd32,
+    0 0 40px #32cd32;
+}
+
+@keyframes neonPulse {
+  0% {
+    text-shadow:
+      0 0 10px currentColor,
+      0 0 20px currentColor,
+      0 0 40px currentColor,
+      0 0 60px currentColor;
+  }
+  50% {
+    text-shadow:
+      0 0 20px currentColor,
+      0 0 40px currentColor,
+      0 0 60px currentColor,
+      0 0 80px currentColor;
+  }
+  100% {
+    text-shadow:
+      0 0 10px currentColor,
+      0 0 20px currentColor,
+      0 0 40px currentColor,
+      0 0 60px currentColor;
+  }
+}
+
+.neon-pulse {
+  animation: neonPulse 2.5s infinite ease-in-out;
 }
