@@ -42,7 +42,7 @@ const Projects = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <SiGithub className="text-3xl text-white" />
+                        <SiGithub className="hover:text-blue-dark text-3xl transition-colors duration-200 ease-in-out" />
                       </Link>
                     )}
                   </div>
