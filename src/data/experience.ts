@@ -9,7 +9,7 @@ const experiences = [
     roles: [
       {
         title: "VP of Internal Affairs",
-        date:"April 2025 - Present",
+        date: "April 2025 - Present",
         details: [
           "Managed internal operations for ACM, including event planning, documentation, and board coordination",
           "Collaborated with projects leads and executive officers to streamline communication and logistics",
@@ -34,7 +34,7 @@ const experiences = [
     roles: [
       {
         title: "Operations Committee Member",
-            date: "March 2025 - April 2025",
+        date: "March 2025 - April 2025",
 
         details: [
           "Supported planning of Citrus Hack, UCR’s 24-hour flagship hackathon with 300+ participants",

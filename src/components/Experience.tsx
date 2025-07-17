@@ -27,9 +27,11 @@ const Experience = () => {
                   key={title}
                   className="bg-blue-accent rounded-3xl p-8 text-lg"
                 >
-                  <div className="flex items-center justify-between mb-4">
+                  <div className="mb-4 flex items-center justify-between">
                     <p className="text-3xl font-bold">{title}</p>
-                    <p className="text-xl text-gray-primary font-semibold">{date}</p>
+                    <p className="text-gray-primary text-xl font-semibold">
+                      {date}
+                    </p>
                   </div>
                   <ul className="ml-5 list-disc space-y-2">
                     {details.map((detail, i) => (

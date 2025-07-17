@@ -37,7 +37,7 @@ const projects = [
     description:
       "Led and developed with a team of 10 developers to build a website for UC Riverside's Pre-Therapy Student Organization.",
     github: "https://github.com/acm-ucr/ptso-website",
-        websiteLink: "https://ptso.ucrhighlanders.org/",
+    websiteLink: "https://ptso.ucrhighlanders.org/",
 
     icons: [
       SiReact,
@@ -56,9 +56,8 @@ const projects = [
     description:
       "Led and developed with a team of 11 developers to build a website for UC Riverside's AI Student Collective.",
     github: "https://github.com/acm-ucr/aisc-website",
-            websiteLink: "https://acm-ucr.github.io/aisc-website/",
+    websiteLink: "https://acm-ucr.github.io/aisc-website/",
 
-    
     icons: [
       SiReact,
       SiNextdotjs,
