@@ -1,7 +1,7 @@
 import ACM from "@/public/acm.webp";
 import citrusHack from "@/public/citrusHack.webp";
 
-export const experiences = [
+const experiences = [
   {
     logo: ACM,
     alt: "ACM Logo",
@@ -9,6 +9,7 @@ export const experiences = [
     roles: [
       {
         title: "VP of Internal Affairs",
+        date:"April 2025 - Present",
         details: [
           "Managed internal operations for ACM, including event planning, documentation, and board coordination",
           "Collaborated with projects leads and executive officers to streamline communication and logistics",
@@ -17,6 +18,7 @@ export const experiences = [
       },
       {
         title: "Front-End Project Lead",
+        date: "March 2025 - Present",
         details: [
           "Led teams of 10+ developers, teaching Tailwind, React, and Typescript using SCRUM techniques to develop websites",
           "Performed code reviews, stand up meetings, and repository management by creating issues and handling pull requests",
@@ -32,6 +34,8 @@ export const experiences = [
     roles: [
       {
         title: "Operations Committee Member",
+            date: "March 2025 - April 2025",
+
         details: [
           "Supported planning of Citrus Hack, UCR’s 24-hour flagship hackathon with 300+ participants",
           "Wrote the official Devpost project submission guide for Citrus Hack 2025, detailing clear and accurate communication of rules, judging criteria, and event logistics",
@@ -40,3 +44,5 @@ export const experiences = [
     ],
   },
 ];
+
+export default experiences;

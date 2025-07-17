@@ -1,6 +1,6 @@
 import Image from "next/image";
 import ExperienceDivder from "@/components/ExperienceDivider";
-import { experiences } from "@/data/experience";
+import experiences from "@/data/experience";
 
 const Experience = () => {
   return (
@@ -17,17 +17,20 @@ const Experience = () => {
               <Image
                 src={logo}
                 alt={alt}
-                className={`w-4/5 ${index === 1 ? "mr-15" : ""}`}
-              />{" "}
+                className={`w-3/5 ${index === 1 ? "mr-15" : ""}`}
+              />
               <p className="mt-4 text-center text-2xl font-bold">{name}</p>
             </div>
             <div className="flex w-2/3 flex-col justify-center space-y-5">
-              {roles.map(({ title, details }) => (
+              {roles.map(({ title, date, details }) => (
                 <div
                   key={title}
-                  className="bg-blue-accent rounded-3xl p-8 text-xl"
+                  className="bg-blue-accent rounded-3xl p-8 text-lg"
                 >
-                  <p className="mb-4 text-3xl font-bold">{title}</p>
+                  <div className="flex items-center justify-between mb-4">
+                    <p className="text-3xl font-bold">{title}</p>
+                    <p className="text-xl text-gray-primary font-semibold">{date}</p>
+                  </div>
                   <ul className="ml-5 list-disc space-y-2">
                     {details.map((detail, i) => (
                       <li key={i}>{detail}</li>
