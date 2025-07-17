@@ -30,7 +30,10 @@ const ContactUs = () => {
           }
         }}
       ></iframe>
-      <p className="text-glow-green text-green-neon p-8 text-center text-5xl">
+      <p
+        className="text-glow-green text-green-neon p-8 text-center text-5xl"
+        id="contact"
+      >
         Contact
       </p>
       <div className="mx-auto flex w-2/3 justify-center pb-12">

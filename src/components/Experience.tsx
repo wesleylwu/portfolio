@@ -5,7 +5,10 @@ import experiences from "@/data/experience";
 const Experience = () => {
   return (
     <>
-      <p className="text-glow-purple text-purple-neon ml-45 text-5xl">
+      <p
+        className="text-glow-purple text-purple-neon ml-45 text-5xl"
+        id="experience"
+      >
         Experience
       </p>
       <ExperienceDivder />

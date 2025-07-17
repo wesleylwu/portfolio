@@ -6,7 +6,10 @@ import { SiGithub } from "react-icons/si";
 const Projects = () => {
   return (
     <>
-      <p className="text-glow-red text-red-neon p-8 text-center text-5xl">
+      <p
+        className="text-glow-red text-red-neon p-8 text-center text-5xl"
+        id="projects"
+      >
         Projects
       </p>
       <div className="mx-auto grid max-w-7xl grid-cols-2 gap-8">
