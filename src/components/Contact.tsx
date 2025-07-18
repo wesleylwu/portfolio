@@ -8,12 +8,6 @@ import { useState } from "react";
 import toast from "react-hot-toast";
 import { motion } from "framer-motion";
 
-const formAnimation = {
-  initial: { scale: 0.9, opacity: 0, y: 0, x: 10 },
-  animate: { scale: 1, opacity: 1 },
-  transition: { duration: 0.6, delay: 0.3 },
-};
-
 const ContactUs = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -30,18 +24,24 @@ const ContactUs = () => {
           }
         }}
       ></iframe>
-      <p
-        className="text-glow-green text-green-neon p-8 text-center text-5xl"
+      <motion.p
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
+        className="text-glow-green text-green-neon mt-10 p-8 text-center text-3xl md:text-3xl lg:text-4xl xl:text-5xl"
         id="contact"
       >
         Contact
-      </p>
-      <div className="mx-auto flex w-2/3 justify-center pb-12">
+      </motion.p>
+
+      <div className="mx-auto flex w-full justify-center px-4 pb-12">
         <motion.div
-          className="rounded-4xl border-3 p-8 md:w-2/3"
-          initial={formAnimation.initial}
-          animate={formAnimation.animate}
-          transition={formAnimation.transition}
+          className="w-full max-w-sm rounded-4xl border-3 p-8 sm:max-w-lg md:w-2/3 md:max-w-xl"
+          initial={{ scale: 0.95, opacity: 0, x: 10 }}
+          whileInView={{ scale: 1, opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.3 }}
         >
           {isSubmitted ? (
             <div className="font-quicksand flex flex-col items-center text-center text-xl sm:text-2xl">
@@ -53,7 +53,7 @@ const ContactUs = () => {
               onSubmit={() => (window.submitted = true)}
               target="hidden_iframe"
             >
-              <div className="font-quicksand block text-2xl font-bold">
+              <div className="font-quicksand block text-lg font-bold md:text-xl xl:text-2xl">
                 Name
               </div>
               <input
@@ -64,7 +64,7 @@ const ContactUs = () => {
                 required
               />
 
-              <div className="font-quicksand mt-4 block text-2xl font-bold">
+              <div className="font-quicksand mt-4 block text-lg font-bold md:text-xl xl:text-2xl">
                 Email
               </div>
               <input
@@ -75,7 +75,7 @@ const ContactUs = () => {
                 required
               />
 
-              <div className="font-quicksand mt-4 block text-2xl font-bold">
+              <div className="font-quicksand mt-4 block text-lg font-bold md:text-xl xl:text-2xl">
                 Message
               </div>
               <textarea
@@ -85,7 +85,7 @@ const ContactUs = () => {
               />
               <motion.div whileHover={{ scale: 1.05 }}>
                 <div className="mt-4 flex justify-center">
-                  <button className="bg-blue-secondary w-30 cursor-pointer rounded-2xl border-1 p-3 text-center text-xl">
+                  <button className="bg-blue-secondary w-30 cursor-pointer rounded-2xl border-1 p-3 text-center text-base md:text-lg xl:text-xl">
                     Submit
                   </button>
                 </div>

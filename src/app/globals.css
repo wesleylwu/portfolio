@@ -73,3 +73,21 @@
 .neon-pulse {
   animation: neonPulse 2.5s infinite ease-in-out;
 }
+
+.image-glow-blue {
+  border-radius: 50%;
+  box-shadow:
+    0 0 5px #00ffff,
+    0 0 10px #00ffff,
+    0 0 20px #00ffff,
+    0 0 40px #00ffff;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.image-glow-blue:hover {
+  box-shadow:
+    0 0 10px #00ffff,
+    0 0 20px #00ffff,
+    0 0 30px #00ffff,
+    0 0 50px #00ffff;
+}
