@@ -6,6 +6,7 @@ import Divider from "@/components/Divider";
 import { Link as ScrollLink } from "react-scroll";
 import { motion, AnimatePresence } from "framer-motion";
 import { RiMenu2Fill, RiCloseFill } from "react-icons/ri";
+import MusicButton from "@/components/Music";
 
 const NavBar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -17,15 +18,18 @@ const NavBar = () => {
   return (
     <div className="sticky top-0 z-50">
       <div className="font-quicksand bg-blue-primary flex items-center justify-between p-10 text-lg lg:text-xl xl:text-2xl">
-        <ScrollLink
-          to="home"
-          smooth={true}
-          duration={500}
-          offset={-100}
-          className="text-blue-neon text-glow-blue neon-pulse cursor-pointer"
-        >
-          Wesley Wu
-        </ScrollLink>
+        <div className="flex items-center gap-4">
+          <ScrollLink
+            to="home"
+            smooth={true}
+            duration={500}
+            offset={-100}
+            className="text-blue-neon text-glow-blue neon-pulse cursor-pointer"
+          >
+            Wesley Wu
+          </ScrollLink>
+          <MusicButton />
+        </div>
 
         <div className="md:hidden">
           <RiMenu2Fill

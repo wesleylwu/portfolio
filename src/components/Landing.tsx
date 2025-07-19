@@ -23,7 +23,7 @@ const Landing = () => {
 
   return (
     <div
-      className="bg-blue-secondary relative flex h-[80vh] items-center justify-center text-white md:h-screen"
+      className="bg-blue-secondary relative flex h-[70vh] items-center justify-center text-white sm:h-[80vh] md:h-screen"
       id="home"
     >
       <motion.p
@@ -41,6 +41,10 @@ const Landing = () => {
         alt="Mount Fuji and Moon"
         className="absolute bottom-0 w-full"
       />
+
+      <div className="absolute z-0 mt-90 h-[250px] w-[250px] rounded-full bg-white/10 blur-3xl sm:h-[300px] sm:w-[300px] md:mt-80 md:h-[350px] md:w-[350px] lg:mt-50 lg:h-[400px] lg:w-[400px]" />
+
+      <div className="via-blue-primary to-blue-primary blur-4xl absolute -bottom-5 h-[5vh] w-full bg-gradient-to-b" />
     </div>
   );
 };
