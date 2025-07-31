@@ -6,7 +6,7 @@ declare global {
 }
 import { useState } from "react";
 import toast from "react-hot-toast";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 
 const ContactUs = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);

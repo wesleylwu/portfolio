@@ -3,7 +3,7 @@
 import Image from "next/image";
 import mtFujiAndMoon from "@/public/mtFujiAndMoon.webp";
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 
 const Landing = () => {
   const fullText = "Welcome!";

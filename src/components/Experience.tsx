@@ -3,7 +3,7 @@
 import Image from "next/image";
 import ExperienceDivder from "@/components/ExperienceDivider";
 import experiences from "@/data/experience";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 
 const Experience = () => {
   return (

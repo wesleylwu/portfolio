@@ -4,7 +4,7 @@ import { useState } from "react";
 import navBar from "@/data/navBar";
 import Divider from "@/components/Divider";
 import { Link as ScrollLink } from "react-scroll";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "motion/react";
 import { RiMenu2Fill, RiCloseFill } from "react-icons/ri";
 import MusicButton from "@/components/Music";
 
